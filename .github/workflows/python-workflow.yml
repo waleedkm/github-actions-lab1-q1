@@ -22,7 +22,7 @@ jobs:
     -name: touch a file
      run: |
         touch requirements.txt
-        cat "fastapi=3.9.6" >> requirements.txt
+        echo "fastapi=3.9.6" > requirements.txt
 
     - name: Install dependencies
       run: |

@@ -19,8 +19,8 @@ jobs:
     #      name: my-artifact
     #      path: requirements.txt
 
-    -name: touch a file
-     run: |
+    - name: touch a file
+      run: |
         touch requirements.txt
         echo "fastapi=3.9.6" > requirements.txt
 

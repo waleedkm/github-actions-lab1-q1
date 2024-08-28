@@ -13,11 +13,16 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Download artifacts
-      uses: actions/upload-artifact@v4
-      with:
-         name: my-artifact
-         path: requirements.txt
+    # - name: Download artifacts
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #      name: my-artifact
+    #      path: requirements.txt
+
+    -name: touch a file
+     run: |
+        touch requirements.txt
+        cat "fastapi=3.9.6" >> requirements.txt
 
     - name: Install dependencies
       run: |

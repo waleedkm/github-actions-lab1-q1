@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v4
-      
+
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
@@ -22,10 +22,10 @@ jobs:
     #      name: my-artifact
     #      path: requirements.txt
 
-    - name: touch a file
-      run: |
-        touch requirements.txt
-        echo "fastapi==0.63.0" > requirements.txt
+    # - name: touch a file
+    #   run: |
+    #     touch requirements.txt
+    #     echo "fastapi==0.63.0" > requirements.txt
 
     - name: Install dependencies
       run: |

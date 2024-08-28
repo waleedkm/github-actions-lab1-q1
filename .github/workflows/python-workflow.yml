@@ -13,7 +13,8 @@ jobs:
       with:
         python-version: 3.8
 
-    - uses: actions/upload-artifact@v4
+    - name: Download artifacts
+      uses: actions/upload-artifact@v4
       with:
          name: my-artifact
          path: requirements.txt
